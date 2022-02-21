@@ -1,0 +1,270 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                  BASE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+                   FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@import url("iconic/css/iconmonstr-iconic-font.min.css");
+@import url("fonts.css");
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   HOME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/* HEADER start____________________________________ */
+.header {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  position: absolute;
+  background-color: transparent;
+  margin: 0;
+  width: 100vw;
+  height: 80px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo {
+  position: relative;
+}
+
+.header ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.header li {
+  display: inline-block;
+  margin: 0;
+  padding-right: 2rem;
+}
+
+.header li a {
+  text-decoration: none;
+  color: brown;
+}
+
+.header .current::before {
+  display: inline-block;
+  content: ""; 
+  width: 90px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;
+  margin-right: 6px;
+}
+/* HEADER end_____________________________________ */
+
+
+
+/* HOME start______________________________________ */
+.home {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.herovideo {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  min-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}  
+
+.home h1 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: gray;
+}
+
+.home h2 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 33px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: gray;
+}
+
+.home h3,
+.header li {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  color: brown;
+  font-weight: 800;
+}  
+
+.home .home-hello {
+  position: absolute;
+  z-index: 2;
+  left: 40px;
+  bottom: 40px;
+}
+
+.home-hello h3::after {
+  display: inline-block;
+  content: ""; 
+  width: 120px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;
+}
+
+/* SCROLL DOWN start________________________________ */
+.home .home-scroll {
+  position: absolute;
+  left: 40%;
+  bottom: .3rem;
+  z-index: 500;
+}
+
+.home .home-scroll a {
+  font-family: "montserrat-semibold", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: gray;
+  position: relative;
+  display: inline-block;
+  line-height: 5rem;
+  padding-right: 2rem;
+  text-decoration: none;
+}
+
+.home-scroll a:before {
+  display: inline-block;
+  content: ""; 
+  width: 35px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.home-scroll a::after {
+  display: inline-block;
+  content: ""; 
+  width: 65px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+/* SCROLL DOWN end__________________________________ */
+
+
+/* BUTTONS HOME start________________________________ */
+.home .home-buttons {
+  position: absolute;
+  right: 15rem;
+  bottom: 3rem;
+  text-align: center;
+  z-index: 5;
+}
+
+.home .home-buttons .button {
+  font-family: "montserrat-semibold", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  /* letter-spacing: .rem; */
+  text-decoration: none;
+  color: gray;
+  padding: 5px;
+  display: block;
+  border: 3px;
+  border-style: solid;
+  width: 200px;
+  border-color: gray;
+  color: grey;
+  margin-top: 10px;
+  transition: all .6s ease-in-out;
+}
+
+.home .home-buttons .button:hover,
+.home .home-buttons .button:focus {
+  background-color: grey !important;
+  color: brown;
+}
+/* BUTTONS HOME end__________________________________ */
+
+
+/* SOCIAL MEDIA start________________________________ */
+.social-icons {
+  position: absolute;
+  z-index: 800;
+  right: 25px;
+  bottom: 45px;
+  padding:5pxssssss;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: gray;
+  font-size: 25px;
+}
+
+.sc-instagram::after {
+  display: block;
+  content: ""; 
+  width: 2px;
+  height: 50px;
+  margin-left: 12px;
+  background-color: brown;  
+}
+
+.sc-fiverr::after {
+  display: block;
+  content: ""; 
+  width: 2px;
+  height: 25px;
+  margin-left: 12px;
+  background-color: brown; 
+}
+
+.sc-youtube::after {
+  display: block;
+  content: ""; 
+  width: 2px;
+  height: 150px;
+  margin-left: 12px;
+  background-color: brown; 
+}
+
+.social-icons a:hover {
+
+}
+/* SOCIAL MEDIA end__________________________________ */
+
+/* HOME end__________________________________________ */
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+______________ABOUT ME_________________________________
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.about-me {
+  background-color: blueviolet;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}

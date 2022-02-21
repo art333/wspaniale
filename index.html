@@ -17,9 +17,10 @@
 
     <nav>
       <ul>
-        <li>about me</li>
-        <li>art</li>
-        <li>contact</li>
+        <li class="current"><a href="#header" title="home">home</a></li>
+        <li class="smoothscroll"><a href="#about-me">about</a></li>
+        <li class="smoothscroll"><a href="#art">art</a></li>
+        <li class="smoothscroll"><a href="#contact">contact</a></li>
       </ul>
     </nav>
 
@@ -27,16 +28,48 @@
 
   <section class="home">
 
-      <video src="asstes/herovideo.mp4" type="video.mp4" autoplay loop muted poster=""></video>
+      <video class="herovideo" autoplay muted loop >
+        <source src="assets/herovideo.mp4" type="video/mp4">
+      </video>
       
       <div class="home-hello">
         <h1>Actimanzu</h1>
-
-        <h3>DIGITAL ARTIST</h3>
-
+        <h3>DIGITAL ARTIST</h3>        
         <h2>Kamil Milde</h2>
     </div>
 
+    <div class="home-scroll">
+      <a href="#about-me" class="scroll-link smoothscroll">
+          <span>Scroll Down</span>
+      </a>
+    </div>
+
+    <div class="home-buttons">    
+      <a href="#art" class="button">art</a>
+      <a href="#contact" class="button">contact</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="#" class="sc-instagram">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a><br>
+      <a href="#" class="sc-fiverr">
+        <ion-icon name="finger-print-outline"></ion-icon>
+      </a><br>
+      <a href="#" class="sc-youtube">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+    </div>
+
   </section>
+
+  <section class="about-me">
+    <h1>Jeste Dezajner</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nisi reiciendis dolorem error! Natus, provident eius libero, illo facere, hic nihil consectetur harum eveniet impedit reiciendis saepe expedita ab quasi!</p>
+  </section>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
