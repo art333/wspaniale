@@ -268,11 +268,20 @@ ______________ABOUT ME_________________________________
 
 .about-me {
   position: relative;
-  background-color: rgb(193, 192, 196);
+  background-image: url(assets/tlo/piasek.jpg);
+  background-size: cover;
   width: 100%;
-  height: 1100px;
+  height: 130vh;
 }
 
+.kamisfoto img {
+  height: 500px;
+  height: 700px;
+  border-radius: 3%;
+  box-shadow: 1px 1px 5px 6px grey;
+}
+
+/* ABOUT ME HEADER start_______________________________ */
  .about-me-header {
   width: 700px;
   padding-bottom: 15vh;
@@ -282,8 +291,23 @@ ______________ABOUT ME_________________________________
   left: 50%;
   transform: translateX(-50%);
   font-family: "montserrat-semibold", sans-serif;
-
+  color: whitesmoke;
 }
+
+.about-me-header h1 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: brown;
+  padding-bottom: 15px;
+}
+
+.about-me-header p {
+  font-size: 1rem;
+}
+/* ABOUT ME HEADER end____________________________________ */
+
+
 
 .row-about-me {
   display: grid;
@@ -295,13 +319,55 @@ ______________ABOUT ME_________________________________
   transform: translateX(-50%);
   position: absolute;
   top: 35vh;
+  color: whitesmoke;
 }
 
-.kamisfoto img {
-  height: 500px;
-  height: 700px;
+/* TEXT ABOUT ME start______________________________________ */
+.about-me-text h3 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: brown;
+  padding-bottom: 10px;
 }
 
+.about-me-text {
+  font-size: 1.5rem;
+}
+
+.about-me .hire-me {
+  position: relative;
+  left: 30%;
+  bottom: -50px;
+  text-align: center;
+  z-index: 5;
+}
+/* TEXT ABOUT ME end_________________________________________ */
+
+
+/* BUTTON HIRE ME start______________________________________ */
+.about-me .hire-me a {
+  font-family: "montserrat-semibold", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: gray;
+  padding: 5px;
+  display: block;
+  border: 3px;
+  border-style: solid;
+  width: 200px;
+  border-color: gray;
+  color: grey;
+  transition: all .6s ease-in-out;
+}
+
+.about-me .hire-me .button:hover,
+.about-me .hire-me .button:focus {
+  background-color: grey;
+  color: brown !important;
+}
+/* BUTTON ABOUT ME end_________________________________________ */
 
 
 
