@@ -270,14 +270,15 @@ ______________ABOUT ME_________________________________
   position: relative;
   background-image: url(assets/tlo/piasek.jpg);
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 130vh;
+  height: 1150px;
 }
 
 .kamisfoto img {
   height: 500px;
   height: 700px;
-  border-radius: 3%;
+  border-radius: 1%;
   box-shadow: 1px 1px 5px 6px grey;
 }
 
@@ -308,19 +309,18 @@ ______________ABOUT ME_________________________________
 /* ABOUT ME HEADER end____________________________________ */
 
 
-
 .row-about-me {
   display: grid;
   grid-template-columns: repeat(2, 500px);
   grid-template-rows: repeat(2, 600px);
-  gap: 100px;
+  gap: 20px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  position: absolute;
   top: 35vh;
   color: whitesmoke;
 }
+
 
 /* TEXT ABOUT ME start______________________________________ */
 .about-me-text h3 {
@@ -333,19 +333,20 @@ ______________ABOUT ME_________________________________
 
 .about-me-text {
   font-size: 1.5rem;
-}
-
-.about-me .hire-me {
-  position: relative;
-  left: 30%;
-  bottom: -50px;
-  text-align: center;
-  z-index: 5;
+  text-align: end;
 }
 /* TEXT ABOUT ME end_________________________________________ */
 
 
 /* BUTTON HIRE ME start______________________________________ */
+.about-me .hire-me {
+  position: relative;
+  left: -20%;
+  bottom: -50px;
+  text-align: center;
+  z-index: 5;
+}
+
 .about-me .hire-me a {
   font-family: "montserrat-semibold", sans-serif;
   font-size: 1.5rem;
@@ -369,6 +370,54 @@ ______________ABOUT ME_________________________________
 }
 /* BUTTON ABOUT ME end_________________________________________ */
 
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+______________ABOUT ME end_____________________________
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
 
 
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+______________PROMO VIDEO start________________________
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.promo-video h1 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: brown;
+  padding: 30px 0;
+}
+
+.promo-video {
+  position: relative;
+  background-image: url(assets/tlo/piasek.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 110px;
+}
+
+.max-width-video {
+  max-width: 1700px;
+  margin: 0 110px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* .video-wrapper {
+  display: block;
+  margin: auto;
+} */
