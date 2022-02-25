@@ -268,17 +268,15 @@ ______________ABOUT ME_________________________________
 
 .about-me {
   position: relative;
-  background-image: url(assets/tlo/piasek.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(assets/tlo/starspattern.png);
+  background-repeat: repeat;
   width: 100%;
-  height: 1150px;
+  height: 1050px;
 }
 
 .kamisfoto img {
   height: 500px;
   height: 700px;
-  border-radius: 1%;
   box-shadow: 1px 1px 5px 6px grey;
 }
 
@@ -368,7 +366,7 @@ ______________ABOUT ME_________________________________
   background-color: grey;
   color: brown !important;
 }
-/* BUTTON ABOUT ME end_________________________________________ */
+/* BUTTON ABOUT ME end_________________________________ */
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________ABOUT ME end_____________________________
@@ -391,12 +389,11 @@ ______________PROMO VIDEO start________________________
 
 .promo-video {
   position: relative;
-  background-image: url(assets/tlo/piasek.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(assets/tlo/starspattern.png);
+  background-repeat: repeat;
   width: 100%;
   height: 100%;
-  padding-bottom: 110px;
+  padding-bottom: 70px;
 }
 
 .max-width-video {
@@ -417,7 +414,79 @@ ______________PROMO VIDEO start________________________
   height: 100%;
 }
 
-/* .video-wrapper {
-  display: block;
-  margin: auto;
-} */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+______________PROMO VIDEO end___________________________
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+______________PROJECTS start____________________________
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.projects-section {
+  position: relative;
+  background-image: url(assets/tlo/starspattern.png);
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 110px;
+}
+
+.projects-section h1 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: brown;
+  padding: 30px 0;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 400px 300px;
+  gap: 20px;
+  column-gap: 150px;
+  grid-template-areas: 
+  "projects-video"
+  "projects-animations"
+  "projects-graphic"
+  "projects-pictures";
+  justify-content: center;
+}
+
+.projects-container h1 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: whitesmoke;
+  padding-bottom: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.projects-container h1::before {
+  position: absolute;
+}
+
+.projects-container h3 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: brown;
+  text-align: center;
+}
+
+.projects-container img {
+  height: 200px;
+  width: 350px;
+  margin-top: 20px;
+  box-shadow: 0 4px 13px 0 green;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
