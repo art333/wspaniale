@@ -63,6 +63,11 @@ body {
 .header li a {
   text-decoration: none;
   color: brown;
+  transition: all .6s ease-in-out;
+}
+
+.header li a:hover {
+  color: gray;
 }
 
 .header .current::before {
@@ -225,6 +230,7 @@ body {
 .social-icons a {
   color: gray;
   font-size: 25px;
+  transition: all .6s ease-in-out;
 }
 
 .sc-instagram::after {
@@ -255,7 +261,7 @@ body {
 }
 
 .social-icons a:hover {
-
+  color: brown;
 }
 /* SOCIAL MEDIA end__________________________________ */
 
@@ -291,6 +297,7 @@ ______________ABOUT ME_________________________________
   transform: translateX(-50%);
   font-family: "montserrat-semibold", sans-serif;
   color: whitesmoke;
+  text-shadow: 1px 3px 1px brown;
 }
 
 .about-me-header h1 {
@@ -299,6 +306,25 @@ ______________ABOUT ME_________________________________
   text-transform: uppercase;
   color: brown;
   padding-bottom: 15px;
+  text-shadow: 1px 2px 1px grey;
+}
+
+.about-me-header h1:before {
+  display: inline-block;
+  content: ""; 
+  width: 35px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.about-me-header h1:after {
+  display: inline-block;
+  content: ""; 
+  width: 35px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
 }
 
 .about-me-header p {
@@ -323,10 +349,11 @@ ______________ABOUT ME_________________________________
 /* TEXT ABOUT ME start______________________________________ */
 .about-me-text h3 {
   font-family: "montserrat-bold", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   color: brown;
   padding-bottom: 10px;
+  text-shadow: 1px 1px 1px grey;
 }
 
 .about-me-text {
@@ -384,7 +411,27 @@ ______________PROMO VIDEO start________________________
   text-transform: uppercase;
   text-align: center;
   color: brown;
-  padding: 30px 0;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  text-shadow: 1px 1px 1px grey;
+}
+
+.promo-video h1:before {
+  display: inline-block;
+  content: ""; 
+  width: 35px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.promo-video h1:after {
+  display: inline-block;
+  content: ""; 
+  width: 35px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
 }
 
 .promo-video {
@@ -441,6 +488,26 @@ ______________PROJECTS start____________________________
   text-align: center;
   color: brown;
   padding: 30px 0;
+  text-shadow: 1px 1px 1px whitesmoke;
+}
+
+
+.projects-section h1:before {
+  display: inline-block;
+  content: ""; 
+  width: 35px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.projects-section h1:after {
+  display: inline-block;
+  content: ""; 
+  width: 35px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
 }
 
 .projects-container {
@@ -462,31 +529,153 @@ ______________PROJECTS start____________________________
   font-size: 2rem;
   text-transform: uppercase;
   color: whitesmoke;
+  text-shadow: 1px 2px 1px brown ;
   padding-bottom: 15px;
   text-align: center;
   position: relative;
+
 }
 
-.projects-container h1::before {
+/* .projects-container h1::before {
   position: absolute;
-}
+} */
 
 .projects-container h3 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
-  color: brown;
+  color: grey;
   text-align: center;
+  text-shadow: 1px 1px .5px whitesmoke;
 }
 
 .projects-container img {
   height: 200px;
   width: 350px;
   margin-top: 20px;
-  box-shadow: 0 4px 13px 0 green;
+  box-shadow: 0 4px 13px 0 grey;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 
 }
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+______________PROJECTS end______________________________
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+______________TESTIMONIALS start________________________
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.testimonials {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(assets/tlo/piasek.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.test-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* TESTIMONIALS SLIDER start____________________________*/
+.test-slider {
+  display: flex;
+  justify-content: space-around;
+  top: 10vh;
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+  color: whitesmoke;
+  position: absolute;
+  z-index: 5;
+  margin-bottom: 50px;
+}
+
+.test-slider h1 {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px .5px brown;
+}
+
+.test-slider h1:before {
+  display: inline-block;
+  content: ""; 
+  width: 45px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.test-slider h1:after {
+  display: inline-block;
+  content: ""; 
+  width: 45px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.button-prev,
+.button-next {
+  font-size: 50px;
+  background-color: rgba(80, 80, 80, .4);
+  border-radius: 100%;
+  cursor: pointer;
+  text-align: center;
+  align-self: auto;
+}
+
+.button-prev {
+  margin-left: 15vw;
+}
+
+.button-next {
+  margin-right: 15vw;
+}
+/* TESTIMONIALS SLIDER end________________________________ */
+
+.test-state {
+  display: flex;
+  justify-content: space-around;
+  top: 35vh;
+  height: 25vh;
+  width: 100vw;
+  text-align: center;
+  z-index: 5;
+  position: relative;
+}
+
+.test-slide {
+  width: 15vw;
+  height: 50vh;
+  /* display: flex;
+  flex-direction: column; */
+
+}
+
+.test-slide img {
+  position: absolute;
+  height: 6.6rem;
+  width: 6.6rem;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0.9rem rgba(255, 255, 255, 0.1);
+}
+
+.test-slide p {
+  color: whitesmoke;
+  
+}
+
+
+
+
 
