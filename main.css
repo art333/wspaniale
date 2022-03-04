@@ -832,22 +832,139 @@ fieldset {
   width: 85px;
   height: 2px;
   margin: 0 0 2px 5px;
-  background-color: brown;  
+  background-color: brown;
+}    
 
 .contact-info p {
   margin-bottom: 17px;
 }
 
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+______________CONTACT end_______________________________
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
 
 
 
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+______________FOOTER start______________________________
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
 
+.footer {
+  width: 100vw;
+  height: 470px;
+  background-image: url(assets/tlo/piasek.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
 
+.footer img {
+  position: absolute;
+  top: 1.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 250px;
+  width: 250px;
+  }
 
+ .social-footer {
+   position: absolute;
+   top: 290px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 50%;
+   max-width: 500px;
+   display: flex;
+   justify-content: space-between; 
+ }
 
+ .social-footer a {
+   color: grey;
+   font-size: 50px;
+   transition: all .6s ease-in-out;
+   text-decoration: none;
+ }
+ 
+ .social-footer a:hover {
+   color: brown;  
+ }
 
+ .sc-instagram-footer:before {  
+  display: inline-block;
+  content: ""; 
+  width: 30px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.sc-instagram-footer:after {
+  display: inline-block;
+  content: ""; 
+  width: 38px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.sc-fiverr-footer:before {
+  display: inline-block;
+  content: ""; 
+  width: 25px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.sc-fiverr-footer:after {
+  display: inline-block;
+  content: ""; 
+  width: 60px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.sc-youtube-footer:before {
+  display: inline-block;
+  content: ""; 
+  width: 20px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: brown;  
+}
+
+.sc-youtube-footer:after {
+  display: inline-block;
+  content: ""; 
+  width:10px;
+  height: 2px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background-color: brown;  
+}
+ 
+
+.footer-credits {
+  position: absolute;
+  bottom:20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "montserrat-bold", sans-serif;
+  color: grey;
+}
+
+.footer-credits h1 {
+  font-size: medium;
+}
+
+.footer-credits span{
+  color: brown;
+  text-transform: uppercase;
+}
 
 
 
