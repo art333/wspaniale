@@ -297,7 +297,6 @@ ______________ABOUT ME_________________________________
   transform: translateX(-50%);
   font-family: "montserrat-semibold", sans-serif;
   color: gray;
-  text-shadow: 1px 3px 1px brown;
 }
 
 .about-me-header h1 {
@@ -411,7 +410,7 @@ ______________PROMO VIDEO start________________________
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
-  color: brown;
+  color: whitesmoke;
   padding-top: 130px;
   padding-bottom: 50px;
   text-shadow: 1px 1px 1px grey;
@@ -558,8 +557,31 @@ ______________PROJECTS start____________________________
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
+  transition: 0.5s;
+  overflow: hidden;
 }
+
+
+.projects-section img:hover {
+  opacity: .3;
+  transition: .7s;  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________PROJECTS end______________________________
@@ -837,6 +859,41 @@ fieldset {
 
 .contact-info p {
   margin-bottom: 17px;
+}
+
+
+/* CONTACT BUTTON____________________________________ */
+/* __________________________________________________ */
+
+.contact-form .hire-me {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+  text-align: center;
+  z-index: 5;
+}
+
+.contact-form .hire-me a {
+  font-family: "montserrat-semibold", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: gray;
+  padding: 5px;
+  display: block;
+  border: 3px;
+  border-style: solid;
+  width: 200px;
+  border-color: gray;
+  color: grey;
+  transition: all .6s ease-in-out;
+}
+
+.contact-form .hire-me .button:hover,
+.contact-form .hire-me .button:focus {
+  background-color: grey;
+  color: brown !important;
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
