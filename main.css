@@ -26,8 +26,11 @@ body {
                    HOME
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
+
 /* HEADER start____________________________________ */
 /* ________________________________________________ */
+
+
 .header {
   font-family: "montserrat-bold", sans-serif;
   font-size: 17px;
@@ -84,6 +87,7 @@ body {
 
 /* HOME start______________________________________ */
 /* ________________________________________________ */
+
 
 .home {
   margin: 0;
@@ -146,6 +150,7 @@ body {
 /* SCROLL DOWN start________________________________ */
 /* _________________________________________________ */
 
+
 .home .home-scroll {
   position: absolute;
   left: 40%;
@@ -187,6 +192,8 @@ body {
 
 /* BUTTONS HOME start________________________________ */
 /* __________________________________________________ */
+
+
 .home .home-buttons {
   position: absolute;
   right: 15rem;
@@ -222,6 +229,7 @@ body {
 
 /* SOCIAL MEDIA start________________________________ */
 /* __________________________________________________ */
+
 
 .social-icons {
   position: absolute;
@@ -292,8 +300,10 @@ ______________ABOUT ME_________________________________
   box-shadow: 1px 1px 5px 6px grey;
 }
 
+
 /* ABOUT ME HEADER start_______________________________ */
 /* ____________________________________________________ */
+
 
  .about-me-header {
   width: 700px;
@@ -360,6 +370,7 @@ ______________ABOUT ME_________________________________
 /* TEXT ABOUT ME start______________________________________ */
 /* _________________________________________________________ */
 
+
 .about-me-text h3 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 1.7rem;
@@ -378,6 +389,7 @@ ______________ABOUT ME_________________________________
 
 /* BUTTON HIRE ME start______________________________________ */
 /* __________________________________________________________ */
+
 
 .about-me .hire-me {
   position: relative;
@@ -490,6 +502,7 @@ ______________PROJECTS start____________________________
 /* HEADER_____________________________________________ */
 /* ___________________________________________________ */
 
+
 .projects-section {
   position: relative;
   background-image: url(assets/tlo/geometric.png);
@@ -528,8 +541,10 @@ ______________PROJECTS start____________________________
   background-color: brown;  
 }
 
-/* PROJECTS GRID_________________________________ */
-/* ______________________________________________ */
+
+/* PROJECTS GRID_____________________________________ */
+/* __________________________________________________ */
+
 
 .projects-container {
   display: grid;
@@ -554,12 +569,7 @@ ______________PROJECTS start____________________________
   padding-bottom: 15px;
   text-align: center;
   position: relative;
-
 }
-
-/* .projects-container h1::before {
-  position: absolute;
-} */
 
 .projects-container h3 {
   font-family: "montserrat-bold", sans-serif;
@@ -577,15 +587,17 @@ ______________PROJECTS start____________________________
   box-shadow: 0 4px 13px 0 grey;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) ;
   transition: 0.5s;
   overflow: hidden;
 }
 
 
 .projects-section img:hover {
-  opacity: .3;
-  transition: .7s;   
+  opacity: .45;
+  transition: .6s;  
+  box-shadow: 0 40px 60px 0 brown;
+  transform: scale();
 }
 
 
@@ -630,6 +642,8 @@ ______________TESTIMONIALS start________________________
 
 /* TESTIMONIALS SLIDER start____________________________*/
 /* _____________________________________________________ */
+
+
 .test-slider {
   display: flex;
   justify-content: space-around;
@@ -685,8 +699,11 @@ ______________TESTIMONIALS start________________________
 .button-next {
   margin-right: 15vw;
 }
+
+
 /* TESTIMONIALS SLIDER end________________________________ */
 /* _______________________________________________________ */
+
 
 .test-state {
   display: flex;
@@ -725,7 +742,7 @@ ______________TESTIMONIALS start________________________
   height: 60px;
   background-color: brown; 
   margin-bottom: 10px;
-  margin-left: 160px;
+  margin-left: 10vw;
 }
 
 .test-card .test-author {
@@ -753,6 +770,7 @@ ______________CONTACT start_____________________________
 
 /* CONTACT HEADER_______________________________________ */
 /* _____________________________________________________ */
+
 
 .contact {
   position: relative;
@@ -803,8 +821,10 @@ ______________CONTACT start_____________________________
   size: 1.7rem;
 }
 
-/* CONTACT FORM AND INFO_______________________________ */
+
+/* CONTACT FORM _______________________________________ */
 /* ____________________________________________________ */
+
 
 .row-contact {
   position: absolute;
@@ -833,7 +853,12 @@ ______________CONTACT start_____________________________
   cursor: pointer; 
   border-style: none;
   transition: all .6s ease-in-out;
+  padding-left: 10px;
 }
+
+/* .form-field .value {
+  color: brown;
+} */
 
 /* .row-contact .form-field::after {
   position: absolute;
@@ -862,6 +887,10 @@ fieldset {
   border-style: none;
 }
 
+
+/* INFO FORM___________________________________________ */
+/* ____________________________________________________ */
+
 .contact-info {
   color: grey;
   font-size: 1.5rem;
@@ -889,6 +918,7 @@ fieldset {
 
 /* CONTACT BUTTON____________________________________ */
 /* __________________________________________________ */
+
 
 
 .contact-form .hire-me {
@@ -945,6 +975,7 @@ ______________FOOTER start______________________________
   position: relative;
 }
 
+
 /* LOGO________________________________________________ */
 /* ____________________________________________________ */
 
@@ -957,6 +988,7 @@ ______________FOOTER start______________________________
   height: 250px;
   width: 250px;
   }
+
 
   /* SOCIAL FOOTER_______________________________________ */
   /* ____________________________________________________ */
