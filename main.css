@@ -379,7 +379,9 @@ ______________ABOUT ME_________________________________
 .kamisfoto img {
   height: 500px;
   height: 700px;
-  box-shadow: 1px 1px 5px 6px grey;
+  /* box-shadow: 1px 1px 5px 6px grey; */
+  box-shadow: 1px 1px 20px 6px grey;
+  border-radius: 1%;
 }
 
 
@@ -479,6 +481,7 @@ ______________ABOUT ME_________________________________
   bottom: -50px;
   text-align: center;
   z-index: 5;
+  background-color: transparent;
 }
 
 .about-me .hire-me a {
@@ -493,7 +496,6 @@ ______________ABOUT ME_________________________________
   border-style: solid;
   width: 200px;
   border-color: gray;
-  color: grey;
   transition: all .6s ease-in-out;
 }
 
@@ -640,7 +642,7 @@ ______________PROJECTS start____________________________
   "projects-graphic"
   "projects-pictures";
   justify-content: center;
-}
+  }
 
 .projects-container h1 {
   font-family: "montserrat-bold", sans-serif;
@@ -659,30 +661,36 @@ ______________PROJECTS start____________________________
   text-transform: uppercase;
   color: grey;
   text-align: center;
-  text-shadow: 1px 1px .5px whitesmoke;
 }
 
-.projects-container img {
+
+.projects-block a {
   height: 200px;
   width: 350px;
   margin-top: 20px;
-  box-shadow: 0 4px 13px 0 grey;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%) ;
-  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2rem;
   overflow: hidden;
+  box-shadow: 1px 1px 20px 6px grey;
+  transition: all .8s ease-out;
+}
+
+.img-block {
+  max-width: 100%;
+  transition: all 0.8s ease-out;
 }
 
 
-.projects-section img:hover {
-  opacity: .45;
-  transition: .6s;  
-  box-shadow: 0 40px 60px 0 brown;
-  transform: scale();
+.projects-block a:hover .img-block {
+  transform: scale(1.2);
+  opacity: 0.25;
 }
 
-
+.projects-block a:hover {
+  box-shadow: 8px 8px 40px 20px brown;
+}
 
 
 
