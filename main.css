@@ -2,7 +2,6 @@
                   BASE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,7 +27,6 @@ body {
                    HOME
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
-
 /* HEADER start____________________________________ */
 /* ________________________________________________ */
 
@@ -36,19 +34,18 @@ body {
   from {
     opacity: 0;
     transform: translateX(150%);
-  } to {
+  }
+  to {
     opacity: 1;
     transform: none;
   }
 }
 
-
-
 .header {
   font-family: "montserrat-bold", sans-serif;
   font-size: 17px;
   text-transform: uppercase;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   position: absolute;
   background-color: transparent;
   margin: 0;
@@ -62,18 +59,16 @@ body {
   z-index: 2;
 }
 
-
-
 @keyframes fade-home-logo {
   from {
     opacity: 0;
     transform: translateY(500%);
-  } to {
+  }
+  to {
     opacity: 1;
     transform: none;
   }
 }
-
 
 .logo {
   position: relative;
@@ -95,7 +90,7 @@ body {
 .header li a {
   text-decoration: none;
   color: brown;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .header li a:hover {
@@ -104,7 +99,7 @@ body {
 
 .header .current::before {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 90px;
   height: 2px;
   margin-bottom: 5px;
@@ -112,16 +107,8 @@ body {
   margin-right: 6px;
 }
 
-
-
-
-
-
-
-
 /* HOME start______________________________________ */
 /* ________________________________________________ */
-
 
 .home {
   margin: 0;
@@ -132,12 +119,12 @@ body {
 .herovideo {
   position: absolute;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   min-width: 100vw;
   min-height: 100vh;
   overflow: hidden;
-}  
+}
 
 .home h1 {
   font-family: "montserrat-bold", sans-serif;
@@ -160,16 +147,17 @@ body {
   font-family: "montserrat-bold", sans-serif;
   font-size: 17px;
   text-transform: uppercase;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   color: brown;
   font-weight: 800;
-}  
+}
 
 @keyframes fade-home-hello {
   from {
     opacity: 0;
     transform: translateX(150%);
-  } to {
+  }
+  to {
     opacity: 1;
     transform: none;
   }
@@ -185,7 +173,7 @@ body {
 
 .home-hello h3::after {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 120px;
   height: 2px;
   margin-bottom: 5px;
@@ -195,23 +183,21 @@ body {
 /* SCROLL DOWN start________________________________ */
 /* _________________________________________________ */
 
-
-
 @keyframes fade-home-scroll {
   from {
     opacity: 0;
     transform: translateY(150%);
-  } to {
+  }
+  to {
     opacity: 1;
     transform: none;
   }
 }
 
-
 .home .home-scroll {
   position: absolute;
   left: 40%;
-  bottom: .3rem;
+  bottom: 0.3rem;
   z-index: 500;
   animation: fade-home-scroll 6.5s ease-in 0s 1 normal;
 }
@@ -220,7 +206,7 @@ body {
   font-family: "montserrat-semibold", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   color: gray;
   position: relative;
   display: inline-block;
@@ -231,22 +217,21 @@ body {
 
 .home-scroll a:before {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 35px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .home-scroll a::after {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 65px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
-
 
 /* BUTTONS HOME start________________________________ */
 /* __________________________________________________ */
@@ -255,12 +240,12 @@ body {
   from {
     opacity: 0;
     transform: translateX(-150%);
-  } to {
+  }
+  to {
     opacity: 1;
     transform: none;
   }
 }
-
 
 .home .home-buttons {
   position: absolute;
@@ -285,7 +270,7 @@ body {
   border-color: gray;
   color: grey;
   margin-top: 10px;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .home .home-buttons .button:hover,
@@ -294,30 +279,26 @@ body {
   color: brown;
 }
 
-
-
 /* SOCIAL MEDIA start________________________________ */
 /* __________________________________________________ */
-
-
 
 @keyframes fade-home-social {
   from {
     opacity: 0;
     transform: translateY(-150%);
-  } to {
+  }
+  to {
     opacity: 1;
     transform: none;
   }
 }
-
 
 .social-icons {
   position: absolute;
   z-index: 800;
   right: 25px;
   bottom: 45px;
-  padding:5px;
+  padding: 5px;
   text-decoration: none;
   animation: fade-home-social 3.5s ease-in 0s 1 normal;
 }
@@ -325,34 +306,34 @@ body {
 .social-icons a {
   color: gray;
   font-size: 25px;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .sc-instagram::after {
   display: block;
-  content: ""; 
+  content: "";
   width: 2px;
   height: 50px;
   margin-left: 12px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .sc-fiverr::after {
   display: block;
-  content: ""; 
+  content: "";
   width: 2px;
   height: 25px;
   margin-left: 12px;
-  background-color: brown; 
+  background-color: brown;
 }
 
 .sc-youtube::after {
   display: block;
-  content: ""; 
+  content: "";
   width: 2px;
   height: 150px;
   margin-left: 12px;
-  background-color: brown; 
+  background-color: brown;
 }
 
 .social-icons a:hover {
@@ -362,7 +343,6 @@ body {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________HOME end_____________________________
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________ABOUT ME_________________________________
@@ -384,12 +364,10 @@ ______________ABOUT ME_________________________________
   border-radius: 1%;
 }
 
-
 /* ABOUT ME HEADER start_______________________________ */
 /* ____________________________________________________ */
 
-
- .about-me-header {
+.about-me-header {
   width: 700px;
   padding-bottom: 10vh;
   text-align: center;
@@ -412,30 +390,28 @@ ______________ABOUT ME_________________________________
 
 .about-me-header h1:before {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 35px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .about-me-header h1:after {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 35px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .about-me-header p {
   font-size: 1rem;
 }
 
-
 /* ABOUT ME HEADER end____________________________________ */
 /* _______________________________________________________ */
-
 
 .row-about-me {
   font-family: "montserrat-bold", sans-serif;
@@ -450,10 +426,8 @@ ______________ABOUT ME_________________________________
   color: grey;
 }
 
-
 /* TEXT ABOUT ME start______________________________________ */
 /* _________________________________________________________ */
-
 
 .about-me-text h3 {
   font-family: "montserrat-bold", sans-serif;
@@ -469,11 +443,8 @@ ______________ABOUT ME_________________________________
   text-align: end;
 }
 
-
-
 /* BUTTON HIRE ME start______________________________________ */
 /* __________________________________________________________ */
-
 
 .about-me .hire-me {
   position: relative;
@@ -496,7 +467,7 @@ ______________ABOUT ME_________________________________
   border-style: solid;
   width: 200px;
   border-color: gray;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .about-me .hire-me .button:hover,
@@ -505,12 +476,9 @@ ______________ABOUT ME_________________________________
   color: brown !important;
 }
 
-
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________ABOUT ME end_____________________________
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-
-
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________PROMO VIDEO start________________________
@@ -529,20 +497,20 @@ ______________PROMO VIDEO start________________________
 
 .promo-video h1:before {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 35px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .promo-video h1:after {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 35px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .promo-video {
@@ -563,7 +531,6 @@ ______________PROMO VIDEO start________________________
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-  
 }
 
 .video-wrapper iframe {
@@ -576,16 +543,12 @@ ______________PROMO VIDEO start________________________
 ______________PROMO VIDEO end___________________________
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
-
-
-
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________PROJECTS start____________________________
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
 /* HEADER_____________________________________________ */
 /* ___________________________________________________ */
-
 
 .projects-section {
   position: relative;
@@ -606,29 +569,26 @@ ______________PROJECTS start____________________________
   text-shadow: 1px 1px 1px whitesmoke;
 }
 
-
 .projects-section h1:before {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 35px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .projects-section h1:after {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 35px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
-
 
 /* PROJECTS GRID_____________________________________ */
 /* __________________________________________________ */
-
 
 .projects-container {
   display: grid;
@@ -636,20 +596,20 @@ ______________PROJECTS start____________________________
   grid-template-rows: 400px 300px;
   gap: 20px;
   column-gap: 150px;
-  grid-template-areas: 
-  "projects-video"
-  "projects-animations"
-  "projects-graphic"
-  "projects-pictures";
+  grid-template-areas:
+    "projects-video"
+    "projects-animations"
+    "projects-graphic"
+    "projects-pictures";
   justify-content: center;
-  }
+}
 
 .projects-container h1 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
   color: grey;
-  text-shadow: 1px 2px 1px brown ;
+  text-shadow: 1px 2px 1px brown;
   padding-bottom: 15px;
   text-align: center;
   position: relative;
@@ -663,7 +623,6 @@ ______________PROJECTS start____________________________
   text-align: center;
 }
 
-
 .projects-block a {
   height: 200px;
   width: 350px;
@@ -674,14 +633,13 @@ ______________PROJECTS start____________________________
   margin-top: 2rem;
   overflow: hidden;
   box-shadow: 1px 1px 20px 6px grey;
-  transition: all .8s ease-out;
+  transition: all 0.8s ease-out;
 }
 
 .img-block {
   max-width: 100%;
   transition: all 0.8s ease-out;
 }
-
 
 .projects-block a:hover .img-block {
   transform: scale(1.2);
@@ -692,24 +650,9 @@ ______________PROJECTS start____________________________
   box-shadow: 8px 8px 40px 20px brown;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________PROJECTS end______________________________
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-
-
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________TESTIMONIALS start________________________
@@ -733,7 +676,6 @@ ______________TESTIMONIALS start________________________
 /* TESTIMONIALS SLIDER start____________________________*/
 /* _____________________________________________________ */
 
-
 .test-slider {
   display: flex;
   justify-content: space-around;
@@ -751,31 +693,31 @@ ______________TESTIMONIALS start________________________
   font-family: "montserrat-bold", sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
-  text-shadow: 2px 2px .5px brown;
+  text-shadow: 2px 2px 0.5px brown;
 }
 
 .test-slider h1:before {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 45px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .test-slider h1:after {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 45px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .button-prev,
 .button-next {
   font-size: 50px;
-  background-color: rgba(80, 80, 80, .4);
+  background-color: rgba(80, 80, 80, 0.4);
   border-radius: 100%;
   cursor: pointer;
   text-align: center;
@@ -790,16 +732,14 @@ ______________TESTIMONIALS start________________________
   margin-right: 15vw;
 }
 
-
 /* TESTIMONIALS SLIDER end________________________________ */
 /* _______________________________________________________ */
-
 
 .test-state {
   display: flex;
   justify-content: space-around;
   top: 35vh;
-  height: 25vh;
+  /* height: 25vh; */
   width: 100vw;
   text-align: center;
   z-index: 5;
@@ -808,29 +748,31 @@ ______________TESTIMONIALS start________________________
 
 .test-card {
   width: 20vw;
-  height: 50vh;
+  padding-top: 20px;
+  /* height: 50vh; */
 }
 
 .test-state img {
   position: block;
-  height: 6.6rem;
+  /* height: 6.6rem; */
   width: 6.6rem;
   border-radius: 100%;
   box-shadow: 0 0 0 0.9rem rgba(255, 255, 255, 0.1);
 }
 
-.test-card p {
+.test-card blockquote {
   color: whitesmoke;
   margin: 25px 0 20px 0;
   font-size: 1.2em;
 }
 
-.test-card p::before {
+.test-card blockquote::before {
   display: block;
-  content: ""; 
+  content: "";
   width: 2px;
-  height: 60px;
-  background-color: brown; 
+  /* height: 60px; */
+  background-color: brown;
+  padding-top: 30px;
   margin-bottom: 10px;
   margin-left: 10vw;
 }
@@ -850,17 +792,12 @@ ______________TESTIMONIALS start________________________
 ______________TESTIMONIALS end__________________________
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
-
-
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________CONTACT start_____________________________
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
-
-
 /* CONTACT HEADER_______________________________________ */
 /* _____________________________________________________ */
-
 
 .contact {
   position: relative;
@@ -875,7 +812,7 @@ ______________CONTACT start_____________________________
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-family:"montserrat-bold", sans-serif;
+  font-family: "montserrat-bold", sans-serif;
 }
 
 .contact h1 {
@@ -889,20 +826,20 @@ ______________CONTACT start_____________________________
 
 .contact h1:before {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 45px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .contact h1:after {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 45px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .contact h3 {
@@ -911,10 +848,8 @@ ______________CONTACT start_____________________________
   size: 1.7rem;
 }
 
-
 /* CONTACT FORM _______________________________________ */
 /* ____________________________________________________ */
-
 
 .row-contact {
   position: absolute;
@@ -930,23 +865,22 @@ ______________CONTACT start_____________________________
   border-style: none;
 }
 
- .contact-form {
+.contact-form {
   width: 30vw;
   background-color: transparent;
-
 }
 
-.form-field input{
+.form-field input {
   width: 100%;
   background-color: transparent;
   height: 5rem;
-  cursor: pointer; 
+  cursor: pointer;
   border-style: none;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   padding-left: 10px;
   font: inherit;
   color: whitesmoke;
-  border-bottom: 1px solid gray ;
+  border-bottom: 1px solid gray;
 }
 
 #contact-message {
@@ -970,7 +904,6 @@ fieldset {
   border-style: none;
 }
 
-
 /* INFO FORM___________________________________________ */
 /* ____________________________________________________ */
 .contact-info {
@@ -986,22 +919,19 @@ fieldset {
 
 .contact-info h4:after {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 85px;
   height: 2px;
   margin: 0 0 2px 5px;
   background-color: brown;
-}    
+}
 
 .contact-info p {
   margin-bottom: 17px;
 }
 
-
 /* CONTACT BUTTON____________________________________ */
 /* __________________________________________________ */
-
-
 
 .contact-form .hire-me {
   position: absolute;
@@ -1025,7 +955,7 @@ fieldset {
   width: 200px;
   border-color: gray;
   color: grey;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .contact-form .hire-me .button:hover,
@@ -1034,18 +964,13 @@ fieldset {
   color: brown !important;
 }
 
-
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________CONTACT end_______________________________
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
-
-
-
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ______________FOOTER start______________________________
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-
 
 .footer {
   width: 100vw;
@@ -1057,10 +982,8 @@ ______________FOOTER start______________________________
   position: relative;
 }
 
-
 /* LOGO________________________________________________ */
 /* ____________________________________________________ */
-
 
 .footer img {
   position: absolute;
@@ -1069,98 +992,94 @@ ______________FOOTER start______________________________
   transform: translateX(-50%);
   height: 250px;
   width: 250px;
-  }
+}
 
+/* SOCIAL FOOTER_______________________________________ */
+/* ____________________________________________________ */
 
-  /* SOCIAL FOOTER_______________________________________ */
-  /* ____________________________________________________ */
-  
+.social-footer {
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
 
- .social-footer {
-   position: absolute;
-   top: 290px;
-   left: 50%;
-   transform: translateX(-50%);
-   width: 50%;
-   max-width: 500px;
-   display: flex;
-   justify-content: space-between; 
- }
+.social-footer a {
+  color: grey;
+  font-size: 50px;
+  transition: all 0.6s ease-in-out;
+  text-decoration: none;
+}
 
- .social-footer a {
-   color: grey;
-   font-size: 50px;
-   transition: all .6s ease-in-out;
-   text-decoration: none;
- }
- 
- .social-footer a:hover {
-   color: brown;  
- }
+.social-footer a:hover {
+  color: brown;
+}
 
- .sc-instagram-footer:before {  
+.sc-instagram-footer:before {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 30px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .sc-instagram-footer:after {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 38px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .sc-fiverr-footer:before {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 25px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .sc-fiverr-footer:after {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 60px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .sc-youtube-footer:before {
   display: inline-block;
-  content: ""; 
+  content: "";
   width: 20px;
   height: 2px;
   margin-bottom: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
 
 .sc-youtube-footer:after {
   display: inline-block;
-  content: ""; 
-  width:10px;
+  content: "";
+  width: 10px;
   height: 2px;
   margin-bottom: 5px;
   margin-left: 5px;
-  background-color: brown;  
+  background-color: brown;
 }
- 
 
 /* FOOTER CREDITS______________________________________ */
 /* ____________________________________________________ */
 
-
 .footer-credits {
   position: absolute;
-  bottom:20px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   font-family: "montserrat-bold", sans-serif;
@@ -1171,15 +1090,7 @@ ______________FOOTER start______________________________
   font-size: medium;
 }
 
-.footer-credits span{
+.footer-credits span {
   color: brown;
   text-transform: uppercase;
 }
-
-
-
-
-
-
-
-

@@ -7,6 +7,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lukasz Milde">
+  <!-- <meta name="description" content="Description of the page for SEO"> -->
   <link rel="stylesheet" href="main.css">
   <title>Actimanzu Digital Art</title>
 </head>
@@ -60,15 +62,17 @@
     </div>
 
     <div class="social-icons">
-      <a href="#" class="sc-instagram">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a><br>
-      <a href="#" class="sc-fiverr">
-        <ion-icon name="finger-print-outline"></ion-icon>
-      </a><br>
-      <a href="#" class="sc-youtube">
-        <ion-icon name="logo-youtube"></ion-icon>
-      </a>
+      <ul>
+        <li><a href="#" class="sc-instagram">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+        <li><a href="#" class="sc-fiverr">
+          <ion-icon name="finger-print-outline"></ion-icon>
+        </a></li>
+        <li><a href="#" class="sc-youtube">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a></li>
+    </ul>
     </div>
 
   </section>
@@ -170,11 +174,11 @@
         </div>
       </div>  
       
-      <div class="test-state" >
+      <div class="test-state siema">
         <div class="test-card">
             <img src="assets/avatars/user-01.jpg" alt="Author image" class="test-avatar">
-            <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum. 
-            Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.</p>
+            <blockquote>ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum. 
+            Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.</blockquote>
             <div class="test-author">
                 Tim Cook
                 <span>CEO, Apple</span>
@@ -183,8 +187,9 @@
 
         <div class="test-card">
             <img src="assets/avatars/user-05.jpg" alt="Author image" class="test-avatar">
-            <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-            Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+            <blockquote>nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+            Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel. ipowefoiewhfoiebnfoienb
+            </blockquote>
             <div class="test-author">
                 Sundar Pichai
                 <span>CEO, Google</span>
@@ -193,8 +198,8 @@
 
         <div class="test-card">
             <img src="assets/avatars/user-02.jpg" alt="Author image" class="test-avatar">
-            <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+            <blockquote>dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</blockquote>
             <div class="test-author">
                 Satya Nade
                 <span>CEO, Microsoft</span>
@@ -305,7 +310,13 @@
 
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="siema.min.js"></script>
+  <script>
+    new Siema();
+  </script>
 
 </body>
 </html>
