@@ -870,7 +870,8 @@ ______________CONTACT start_____________________________
   background-color: transparent;
 }
 
-.form-field input {
+.form-field input,
+textarea {
   width: 100%;
   background-color: transparent;
   height: 5rem;
@@ -883,11 +884,8 @@ ______________CONTACT start_____________________________
   border-bottom: 1px solid gray;
 }
 
-#contact-message {
-  height: 6em;
-}
-
-.form-field input:hover {
+.form-field input:hover,
+textarea:hover {
   background-color: grey;
   color: black;
 }
@@ -896,7 +894,8 @@ ______________CONTACT start_____________________________
   font-size: 24px;
 }
 
-input:hover::placeholder {
+input:hover::placeholder,
+textarea:hover::placeholder {
   color: brown;
 }
 
